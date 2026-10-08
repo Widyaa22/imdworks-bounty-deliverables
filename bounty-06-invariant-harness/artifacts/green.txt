@@ -1,0 +1,78 @@
+Compiling 1 files with Solc 0.8.29
+Solc 0.8.29 finished in 93.01ms
+Compiler run successful!
+
+Ran 1 test for test/IMDWorksEscrow.invariant.t.sol:IMDWorksEscrowInvariantTest
+[PASS]
+IMDWorksEscrowInvariantTest invariants:
+[PASS] invariant_balanceCoversIndependentLiabilities
+[PASS] invariant_terminalBountyCannotPayTwice
+ IMDWorksEscrowInvariantTest invariants (runs: 1000, calls: 100000, reverts: 0)
+
+╭---------------+----------+-------+---------+----------╮
+| Contract      | Selector | Calls | Reverts | Discards |
++=======================================================+
+| EscrowHandler | award    | 11318 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | cancel   | 11170 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | create   | 10993 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | delegate | 11155 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | expire   | 11205 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | jump     | 11010 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | submit   | 11008 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | topUp    | 11053 | 0       | 0        |
+|---------------+----------+-------+---------+----------|
+| EscrowHandler | withdraw | 11088 | 0       | 0        |
+╰---------------+----------+-------+---------+----------╯
+
+Logs:
+  Bound result 876120
+  Bound result 1
+  Bound result 2592000
+  Bound result 3128
+  Bound result 7772913
+  Bound result 3746
+  Bound result 4643
+  Bound result 7772953
+  Bound result 4481
+  Bound result 3808283670
+  Bound result 9270
+  Bound result 297
+  Bound result 1197364
+  Bound result 5185
+  Bound result 7776000
+  Bound result 1446839
+  Bound result 2425
+  Bound result 5559
+  Bound result 3477391
+  Bound result 73623869653958227308805
+  Bound result 3910
+  Bound result 6579
+  Bound result 3600
+  Bound result 3479
+  Bound result 7772653
+  Bound result 5652
+  Bound result 4845
+  Bound result 7118
+  Bound result 3924
+  Bound result 9674
+  Bound result 1182265
+  Bound result 1164
+  Bound result 11290
+  Bound result 7772913
+  Bound result 107851782663
+  Bound result 7772426
+  Bound result 14
+  Bound result 5291
+  Bound result 2099
+  Bound result 604800
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 23.34s (23.33s CPU time)
+
+Ran 1 test suite in 23.34s (23.34s CPU time): 1 tests passed, 0 failed, 0 skipped (1 total tests)

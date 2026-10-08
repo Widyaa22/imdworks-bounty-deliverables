@@ -1,0 +1,36 @@
+{
+  "accepted_forms_checked_per_case": 2,
+  "arithmetic": "integer-only production parser/formatter",
+  "floating_point_counterexamples": [
+    {
+      "error_microunits": 1,
+      "exact_microunits": 9007199254740993,
+      "float_microunits": 9007199254740994,
+      "input": "9007199254.740993"
+    },
+    {
+      "error_microunits": 1,
+      "exact_microunits": 999999999999999999,
+      "float_microunits": 1000000000000000000,
+      "input": "999999999999.999999"
+    },
+    {
+      "error_microunits": -9388609,
+      "exact_microunits": 100000000000000001000001,
+      "float_microunits": 99999999999999991611392,
+      "input": "100000000000000001.000001"
+    },
+    {
+      "error_microunits": 7679552,
+      "exact_microunits": 123456789012345678123456,
+      "float_microunits": 123456789012345685803008,
+      "input": "123456789012345678.123456"
+    }
+  ],
+  "generated_cases": 100000,
+  "hand_picked_invalid_cases": 38,
+  "reference_comparisons": 200000,
+  "round_trips_checked": 200000,
+  "seed": 1440088073,
+  "status": "pass"
+}

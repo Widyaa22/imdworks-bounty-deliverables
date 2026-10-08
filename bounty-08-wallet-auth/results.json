@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "generated_test_wallets_only": true,
+  "network": "local-only",
+  "test_count": 33,
+  "test_exit_code": 0,
+  "negative_controls_rejected": {
+    "secure_rejects_replay": true,
+    "secure_rejects_context_substitution": true,
+    "replayable_negative_control_exploited": true,
+    "context_blind_negative_control_exploited": true
+  },
+  "reproducibility": {
+    "node": "v22.22.3",
+    "dependency": "ethers@6.17.0",
+    "command": "npm ci && npm run verify"
+  }
+}

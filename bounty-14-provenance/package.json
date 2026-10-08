@@ -1,0 +1,19 @@
+{
+  "name": "imdworks-bounty-14-provenance",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1",
+    "verify": "node verify.js --offline",
+    "verify:live": "node verify.js --rpc https://rpc.mainnet.chain.robinhood.com",
+    "verify:mutations": "node mutation-check.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "solc": "0.8.29"
+  },
+  "engines": {
+    "node": ">=22.0.0 <23"
+  }
+}

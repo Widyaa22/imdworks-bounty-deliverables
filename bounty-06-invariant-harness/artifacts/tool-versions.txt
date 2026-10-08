@@ -1,0 +1,14 @@
+UTC=2026-10-08T08:36:31Z
+forge Version: 1.8.5
+Commit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f
+Build Timestamp: 2026-10-05T17:18:54.332175693Z (1791220734)
+Build Profile: dist
+cast Version: 1.8.5
+Commit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f
+Build Timestamp: 2026-10-05T17:18:54.332175693Z (1791220734)
+Build Profile: dist
+solc, the solidity compiler commandline interface
+Version: 0.8.37+commit.f401782d.Linux.g++
+77041d2ce690e692d6e03cc812b57d1ddaa4d505
+c64a1edb67b6e3f4a15cca8909c9482ad33a02b0
+ad2c2fdde591c5004ff823a9e03ef2e6f1e4f781f3dd9cd67b9d2126d263e054  src/IMDWorksEscrow.sol

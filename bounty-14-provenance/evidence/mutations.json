@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "expectedOutcome": "both mutations must fail exact byte verification",
+  "pass": true,
+  "sourceMutation": {
+    "from": "uint256 public constant MIN_DURATION = 1 hours;",
+    "to": "uint256 public constant MIN_DURATION = 2 hours;",
+    "verifierStatus": "fail",
+    "comparison": {
+      "exactMatch": false,
+      "expectedBytes": 6258,
+      "actualBytes": 6258,
+      "differingBytes": 4,
+      "ranges": [
+        {
+          "start": 786,
+          "end": 787
+        },
+        {
+          "start": 3046,
+          "end": 3047
+        }
+      ],
+      "deployedSha256": "19ddd1d060882d416a2530e163f51ad769f91878159530bbfe792ec53f6a8c16",
+      "rebuiltSha256": "7f3d4351742aeeb917bd6b8268936cea972b6d4b7561f0fd7cc1c5d8c7ccb0c7"
+    }
+  },
+  "tokenMutation": {
+    "from": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+    "to": "0x0000000000000000000000000000000000000001",
+    "verifierStatus": "fail",
+    "comparison": {
+      "exactMatch": false,
+      "expectedBytes": 6258,
+      "actualBytes": 6258,
+      "differingBytes": 171,
+      "ranges": [
+        {
+          "start": 499,
+          "end": 503
+        },
+        {
+          "start": 505,
+          "end": 518
+        },
+        {
+          "start": 1291,
+          "end": 1295
+        },
+        {
+          "start": 1297,
+          "end": 1310
+        },
+        {
+          "start": 1443,
+          "end": 1447
+        },
+        {
+          "start": 1449,
+          "end": 1462
+        },
+        {
+          "start": 1565,
+          "end": 1569
+        },
+        {
+          "start": 1571,
+          "end": 1584
+        },
+        {
+          "start": 1628,
+          "end": 1632
+        },
+        {
+          "start": 1634,
+          "end": 1647
+        },
+        {
+          "start": 1780,
+          "end": 1784
+        },
+        {
+          "start": 1786,
+          "end": 1799
+        },
+        {
+          "start": 4555,
+          "end": 4559
+        },
+        {
+          "start": 4561,
+          "end": 4574
+        },
+        {
+          "start": 4685,
+          "end": 4689
+        },
+        {
+          "start": 4691,
+          "end": 4704
+        },
+        {
+          "start": 4749,
+          "end": 4753
+        },
+        {
+          "start": 4755,
+          "end": 4768
+        }
+      ],
+      "deployedSha256": "19ddd1d060882d416a2530e163f51ad769f91878159530bbfe792ec53f6a8c16",
+      "rebuiltSha256": "8f190ee6ca56f949e7dbcb45d569693bcb552504c28855152635589cdb9bf0d4"
+    }
+  }
+}

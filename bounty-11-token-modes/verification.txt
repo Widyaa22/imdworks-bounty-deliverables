@@ -1,0 +1,31 @@
+forge Version: 1.8.5
+Commit SHA: 51a52c59cffd940f76eddd0b4bb1791aa4b5ac7f
+Build Timestamp: 2026-10-05T17:18:54.332175693Z (1791220734)
+Build Profile: dist
+No files changed, compilation skipped
+
+Ran 21 tests for test/TokenModes.t.sol:TokenModesTest
+[PASS] test_balanceConservationAcrossTwoBountiesPartialLifecycle() (gas: 1055377)
+[PASS] test_depositCallbackCannotReenterCreateBounty() (gas: 620286)
+[PASS] test_falseReturn_depositRejectedAndStateRolledBack() (gas: 259315)
+[PASS] test_falseReturn_failedWithdrawalPreservesClaimAndIssuerCanRecover() (gas: 812637)
+[PASS] test_falseReturn_postDepositAwardRefundAndWithdrawalRecovery() (gas: 1256816)
+[PASS] test_noReturnToken_fullDepositAwardRefundWithdrawalMatrix() (gas: 1354466)
+[PASS] test_pause_doesNotPreventAwardBookkeepingAndRecoveryWithdrawal() (gas: 889176)
+[PASS] test_pause_doesNotPreventCancelRefundBookkeepingAndRecoveryWithdrawal() (gas: 795853)
+[PASS] test_pause_doesNotPreventExpireRefundBookkeeping() (gas: 540138)
+[PASS] test_pause_postDepositAwardRefundAndWithdrawalRecovery() (gas: 1254199)
+[PASS] test_recipientRestriction_depositRejectedThenIssuerUnblocks() (gas: 589611)
+[PASS] test_recipientRestriction_failedWithdrawalPreservesClaimThenIssuerUnblocks() (gas: 822615)
+[PASS] test_recipientRestriction_postDepositAwardRefundAndWithdrawalRecovery() (gas: 1267028)
+[PASS] test_senderRestriction_depositRejectedThenIssuerUnblocksAndDepositSucceeds() (gas: 604329)
+[PASS] test_senderRestriction_onEscrowPreservesClaimThenIssuerUnblocks() (gas: 820382)
+[PASS] test_senderRestriction_postDepositAwardRefundAndWithdrawalRecovery() (gas: 1262867)
+[PASS] test_standardToken_fullDepositAwardRefundWithdrawalMatrix() (gas: 1334492)
+[PASS] test_transferTax_depositRejectedAsUnsupportedAndStateRolledBack() (gas: 313565)
+[PASS] test_transferTax_failedWithdrawalPreservesClaimAndIssuerCanRecover() (gas: 907029)
+[PASS] test_transferTax_postDepositAwardRefundAndWithdrawalRecovery() (gas: 1295967)
+[PASS] test_withdrawCallbackCannotReenterAndOuterWithdrawalConservesBalance() (gas: 756186)
+Suite result: ok. 21 passed; 0 failed; 0 skipped; finished in 6.21ms (9.74ms CPU time)
+
+Ran 1 test suite in 9.24ms (6.21ms CPU time): 21 tests passed, 0 failed, 0 skipped (21 total tests)

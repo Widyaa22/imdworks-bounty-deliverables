@@ -1,0 +1,14 @@
+{
+  "bounty_id": "bc53559e-b4cc-4288-b9fe-dac309053a98",
+  "captured_from": "../open-bounties.json",
+  "observed_committed_hash": "0x6e530ae15503bcff159620606119ea3ee36392023761ac5f246a3dde57e0d62d",
+  "canonical_hash": "0xcaf0ea32c3885f152e2da6216ec4beb604dfb693be797b389c255eb1b19e9db7",
+  "brief": {
+    "title": "Design canonical brief hashing across two languages",
+    "description": "Specify and implement deterministic serialization for a bounty brief containing title, description, criteria, reward, token and deadline. Implement independently in JavaScript and Python. Analyze line endings, Unicode normalization, key order, missing fields and numeric representation without changing already committed content.\n\nREWARD TERMS\nOne winner receives 1 USDG. Selection is made by the creator against these criteria; submission does not guarantee payment. Submit an original, reproducible result before the deadline. No paid services are required. Work only on local fixtures or public read-only data. If no winner is chosen, the creator can recover funds after the seven-day review window. Awarded funds belong to the winner.",
+    "criteria": "Provide at least 50 cross-language vectors, explicit rejection rules and matching keccak256 hashes for all accepted vectors. Include composed/decomposed Unicode, CRLF/LF, empty values and hostile nested input. A one-command test must reproduce the vectors. Explain how a client distinguishes byte equality from semantic similarity and how immutable historical briefs remain verifiable.",
+    "reward": "1",
+    "token": "USDG",
+    "deadline": "2026-10-14T09:54:30.000Z"
+  }
+}

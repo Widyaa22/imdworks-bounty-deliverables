@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "target": {
+    "chain": "Robinhood Chain",
+    "chainId": 4663,
+    "address": "0xd93aEd6f9F89699969B4967364D464fe7856EFaE"
+  },
+  "compiler": {
+    "version": "0.8.29+commit.ab55807c.Emscripten.clang",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "viaIR": false,
+    "metadata": {
+      "appendCBOR": true,
+      "bytecodeHash": "none",
+      "useLiteralContent": false
+    },
+    "remappings": [
+      "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/"
+    ]
+  },
+  "immutable": {
+    "name": "paymentToken",
+    "type": "IERC20 immutable (address encoded as a right-aligned 32-byte word)",
+    "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+    "derivedFromDeployedRuntime": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+    "references": [
+      {
+        "astId": "757",
+        "start": 487,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 1279,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 1431,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 1553,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 1616,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 1768,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 4543,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 4673,
+        "length": 32
+      },
+      {
+        "astId": "757",
+        "start": 4737,
+        "length": 32
+      }
+    ],
+    "substitution": "Replace each compiler placeholder word at [start,start+length) with 12 zero bytes followed by the 20-byte token address."
+  },
+  "comparison": {
+    "exactMatch": true,
+    "expectedBytes": 6258,
+    "actualBytes": 6258,
+    "differingBytes": 0,
+    "ranges": [],
+    "deployedSha256": "19ddd1d060882d416a2530e163f51ad769f91878159530bbfe792ec53f6a8c16",
+    "rebuiltSha256": "19ddd1d060882d416a2530e163f51ad769f91878159530bbfe792ec53f6a8c16"
+  },
+  "integrity": {
+    "standardInputSha256": "7713029a29b2a1ade5803ae3dd61dda520cf9a2f885f7f05263002a62751130a",
+    "sources": [
+      {
+        "path": "node_modules/@openzeppelin/contracts/interfaces/IERC1363.sol",
+        "bytes": 4454,
+        "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/interfaces/IERC165.sol",
+        "bytes": 193,
+        "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/interfaces/IERC20.sol",
+        "bytes": 182,
+        "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "bytes": 2781,
+        "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "bytes": 10075,
+        "sha256": "ac1fd9fa99b194a8db8dfa9ae8e3ff44feaa8f16668241fd2b66ae8b47d7c082",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+        "bytes": 871,
+        "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "bytes": 3384,
+        "sha256": "32fbb1c908ec1b4de85cc1bb10091aebd5816ffe80dfdd5ca5e084fbea67a462",
+        "dependency": "@openzeppelin/contracts@5.4.0"
+      },
+      {
+        "path": "src/IMDWorksEscrow.sol",
+        "bytes": 9320,
+        "sha256": "ad2c2fdde591c5004ff823a9e03ef2e6f1e4f781f3dd9cd67b9d2126d263e054",
+        "dependency": "project source"
+      }
+    ],
+    "openzeppelinVersion": "5.4.0",
+    "openzeppelinPackageSRI": "sha512-eCYgWnLg6WO+X52I16TZt8uEjbtdkgLC0SUX/xnAksjjrQI4Xfn4iBRoI5j55dmlOhDv1Y7BoR3cU7e3WWhC6A==",
+    "openzeppelinPackageSha256": "3db825bf03687b535d89935b25d1c1d0faa3efde1928684742602a51f24cb863",
+    "packageLockSha256": "d9ca8d2ef005972f0f203aa83242a8d3253aaa3b22143cee34155060880e409f"
+  },
+  "acquisition": {
+    "mode": "offline-fixture",
+    "fixture": "fixtures/deployed-runtime.hex",
+    "originallyFetchedFrom": "https://rpc.mainnet.chain.robinhood.com",
+    "method": "eth_getCode",
+    "blockTag": "latest"
+  }
+}

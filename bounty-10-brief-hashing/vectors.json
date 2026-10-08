@@ -1,0 +1,900 @@
+{
+  "spec_version": "imdworks-brief-v1",
+  "accepted": [
+    {
+      "name": "baseline",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xf1d799f15f1d226757e40997a59a08766af50bb1efae4e1028840cbbe5979116"
+    },
+    {
+      "name": "empty-title",
+      "input": {
+        "title": "",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc5dd8b0a9aa0340649b7054e4b44ded85e6bdb91b670015969bcac21998e1ea3"
+    },
+    {
+      "name": "all-empty",
+      "input": {
+        "title": "",
+        "description": "",
+        "criteria": "",
+        "reward": "",
+        "token": "",
+        "deadline": ""
+      },
+      "canonical_hex": "7b227469746c65223a22222c226465736372697074696f6e223a22222c226372697465726961223a22222c22726577617264223a22222c22746f6b656e223a22222c22646561646c696e65223a22227d",
+      "keccak256": "0x6f7e4aaab379105a2b8128e79446f3ca4dd871e934cff9695d85cd853b781f43"
+    },
+    {
+      "name": "lf",
+      "input": {
+        "title": "Title",
+        "description": "a\nb",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22615c6e62222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x59558f4bad4eda92b1f89c3e89d90844621af1630a5c56257b9e85baf572c8fd"
+    },
+    {
+      "name": "crlf",
+      "input": {
+        "title": "Title",
+        "description": "a\r\nb",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22615c725c6e62222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x324f134d38b4117996059431a4f5599398308dee71c05df7bafcf25c3801e0da"
+    },
+    {
+      "name": "cr",
+      "input": {
+        "title": "Title",
+        "description": "a\rb",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22615c7262222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc7c50ed3f2bfaf5eff1c37aefd44fc38c32deaa9e25755a58439120131aaf79c"
+    },
+    {
+      "name": "composed",
+      "input": {
+        "title": "café",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22636166c3a9222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x77b36d8ccff7055b7d741291490b1c6f21f82c2d8c912551c8f07b9f43680a67"
+    },
+    {
+      "name": "decomposed",
+      "input": {
+        "title": "café",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2263616665cc81222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x28f109d599dadfa235a94f30233d8b9ade573b2ae36d9ce4a729e91f6ee7c58b"
+    },
+    {
+      "name": "emoji",
+      "input": {
+        "title": "🚀",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22f09f9a80222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc2cb59a53b289dce29a7a4419ec02f5c789dcea19bf612a1eff7f24d1bebb3a5"
+    },
+    {
+      "name": "non-bmp",
+      "input": {
+        "title": "𝄞",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22f09d849e222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xd7f2c9daf98ef4ded2a7c866072d8544c7c0ab3780c3634350fc12343efc0b97"
+    },
+    {
+      "name": "cjk",
+      "input": {
+        "title": "中文",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22e4b8ade69687222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xab1fe68946287585937dabc8695346a9303832df8f2f557de7cce1eb5e186baa"
+    },
+    {
+      "name": "arabic",
+      "input": {
+        "title": "مرحبا",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22d985d8b1d8add8a8d8a7222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x35af1c4e5fa8e4f4de1fca83a9073c438235b1d8b0fe6765a4e6c6fca73307ac"
+    },
+    {
+      "name": "rtl-mark",
+      "input": {
+        "title": "a‏b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261e2808f62222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x502b93520343650730f677e8a3dd57c7ed89bc9aa0b36c72c720afdb482537ea"
+    },
+    {
+      "name": "nul",
+      "input": {
+        "title": "a\u0000b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22615c753030303062222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xcf6d2b299eb8be84e06858c5d55a6dd50531754c0a5e8b1bd39f12f397e481af"
+    },
+    {
+      "name": "tab",
+      "input": {
+        "title": "a\tb",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22615c7462222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xd16437497d6ca38ccb970e4e44701efdeef0c7a5d4667e70033c51dc1956330a"
+    },
+    {
+      "name": "quote",
+      "input": {
+        "title": "\"",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225c22222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x03e8e846e731b073b3024251d0e590f2c8a76c43370b114a6bd251619728e3c0"
+    },
+    {
+      "name": "backslash",
+      "input": {
+        "title": "\\",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225c5c222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x28b99f6f954fdaec6ec204a11936f57fecd554d2f7681e12258eb1627338b3aa"
+    },
+    {
+      "name": "slashes",
+      "input": {
+        "title": "</script>",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a223c2f7363726970743e222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x37fcec316d5967738c1b3ec0980658c9bbd2d01fcb79c7837abb5c47a345f1a4"
+    },
+    {
+      "name": "spaces",
+      "input": {
+        "title": "  x  ",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a222020782020222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc4edcbd5de7d264d1974e68c1516149b08fae467161081d20116313a39a8a39d"
+    },
+    {
+      "name": "nbsp",
+      "input": {
+        "title": "a b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261c2a062222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xf360e9d0bc0483447339870861e8b3de431532b9e99e9ffbd6626bf13e67b5f1"
+    },
+    {
+      "name": "line-separator",
+      "input": {
+        "title": "a b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261e280a862222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc4a1cec439bb8b9bd1ff9c91554cc4f0c365bfaca13f007aa7caf1c08922be92"
+    },
+    {
+      "name": "paragraph-separator",
+      "input": {
+        "title": "a b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261e280a962222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x0c2f184c27e5aba9851e3cc250a3ec5adb0ad86bb6ac6c776be3a67bbe163bcc"
+    },
+    {
+      "name": "combining-stack",
+      "input": {
+        "title": "á̧",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261cc81cca7222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x551cd854f8e690a8e3f229c097d4702ec662e237c07eee9d2654a6666b2cc224"
+    },
+    {
+      "name": "hangul-composed",
+      "input": {
+        "title": "한",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22ed959c222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x28bdb90abe4e3be50eeb84d22f4dbd78eabdb9b74e156dd52ef3654f0e50ce5b"
+    },
+    {
+      "name": "hangul-decomposed",
+      "input": {
+        "title": "한",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22e18492e185a1e186ab222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x1b392929791828f9a6768a39e1470aa2447de3ea2140f4ab7212c0cd85a6d26f"
+    },
+    {
+      "name": "fullwidth",
+      "input": {
+        "title": "Ａ",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22efbca1222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xa745b4e2647817376811ae64c7ff503479ae543ed12177de260a9bd2166ebf72"
+    },
+    {
+      "name": "angstrom",
+      "input": {
+        "title": "Å",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22c385222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x41a9cd12e7436f9f4a9dad4be2d23cb8751e9e4f24380d521aa4b760504a17b2"
+    },
+    {
+      "name": "angstrom-sign",
+      "input": {
+        "title": "Å",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22e284ab222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x6ba5fe63034681c5ecde4e18365f30ea2b7063a27d1d15b15665d1d56482710d"
+    },
+    {
+      "name": "reward-zero-string",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "0",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2230222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xaaa6605aa5442f28b0ac7951218a63fe37e9a5cae1beb57b1929367bb6754df2"
+    },
+    {
+      "name": "reward-leading-zero",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "01",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a223031222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x5b97620f094276632e0c7cb125e0d41d0fa4684a78c5f8772c512e739659e16b"
+    },
+    {
+      "name": "reward-decimal",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1.0",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a22312e30222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x3620eca14a200f74b6341acd3bed8729b3cd9d3717eff092d979b9491c661937"
+    },
+    {
+      "name": "reward-exponent",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1e0",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a22316530222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x6e1e7086193e235535782c482f3f0a65e2a0cf778303c6531c3a1c173ee3b05c"
+    },
+    {
+      "name": "reward-negative",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "-1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a222d31222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xe34df429d082fee9ec66953cf8dd8234412b878b2733cb70992f0a3740ab9066"
+    },
+    {
+      "name": "reward-huge",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "9007199254740993",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2239303037313939323534373430393933222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x24a5a503cf02255001699715790e614b3a72fac5f01838314ac9614dc9fc08c4"
+    },
+    {
+      "name": "token-empty",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a22222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x6ed74a84f23270dfab71b8b07e854945a21259f3a77f0b7914fab7bb6eddb602"
+    },
+    {
+      "name": "token-lower",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "usdg",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2275736467222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xffb071f8155c4e16fdca31764e6e0445c8732905008893c3741239b99f7b0289"
+    },
+    {
+      "name": "token-unicode",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "ＵＳＤＧ",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a22efbcb5efbcb3efbca4efbca7222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x4cd63b08dfeba2eba95129b6334f0e86cd7dc8e31655b1e4a40a14507379367b"
+    },
+    {
+      "name": "deadline-empty",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": ""
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22227d",
+      "keccak256": "0x3ba380649490e6090c7bcf189e0e07b48b9081f2b20db8f443119784c3851c53"
+    },
+    {
+      "name": "deadline-offset",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T11:54:30+02:00"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345431313a35343a33302b30323a3030227d",
+      "keccak256": "0xdda9acf294de999f3a853c7bf32718c6536a27dca9bfc3101aabcc28c453f68a"
+    },
+    {
+      "name": "deadline-no-ms",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33305a227d",
+      "keccak256": "0x03434f9e4aa722931f4221f900bd4666cd8ab4b49e3fb1ad4877f75580651f13"
+    },
+    {
+      "name": "deadline-space",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": " 2026-10-14T09:54:30.000Z "
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a2220323032362d31302d31345430393a35343a33302e3030305a20227d",
+      "keccak256": "0x00aa6e21a8ed4a15e5084f0cc4c25f33e88fe80f12576eb2813b52e4cb7f5238"
+    },
+    {
+      "name": "empty-description",
+      "input": {
+        "title": "Title",
+        "description": "",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x1b873abf10b0c940e911add92325ce0aa1a7a5cf7a1db36c3bd4836a8c1a14b6"
+    },
+    {
+      "name": "empty-criteria",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a22222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xb33b6dc8e358edb7ce8da1e737cb1861e35f47124a1c0b2fc77b126a30d0e23b"
+    },
+    {
+      "name": "json-looking",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "{\"admin\":true}",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a227b5c2261646d696e5c223a747275657d222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xfb9788be21ed35a7556be3f02466765fdde83ef332c6a2295368ea41403a0f96"
+    },
+    {
+      "name": "array-looking",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "[1,2]",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a225b312c325d222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x9df23c1bb997a0a143c7f3a096de9b04f432f92b5b45760e9ed9ae7c42e31194"
+    },
+    {
+      "name": "prototype-key-text",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "__proto__",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a225f5f70726f746f5f5f222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x2d2042583ec8b77a48918698e1ae5b3a480866b7c90ed7158c938fd0994adf02"
+    },
+    {
+      "name": "constructor-text",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "constructor",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a22636f6e7374727563746f72222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x52e7998aa2b6814204307522864fb792fd8d085b1ef54ce5484f8bdf07dcf83a"
+    },
+    {
+      "name": "html-hostile",
+      "input": {
+        "title": "Title",
+        "description": "<img src=x onerror=alert(1)>",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a223c696d67207372633d78206f6e6572726f723d616c6572742831293e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x314abbcd1c9c3a3251c0d5097db61c33a73c4332d0d2fde243f27b55c0b7c128"
+    },
+    {
+      "name": "sql-hostile",
+      "input": {
+        "title": "Title",
+        "description": "' OR 1=1 --",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a2227204f5220313d31202d2d222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xf06113746e5fc1342b9d3ab6910b9cc0523540cff1404247b10090c9dedb0cae"
+    },
+    {
+      "name": "shell-hostile",
+      "input": {
+        "title": "Title",
+        "description": "$(rm -rf /)",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a222428726d202d7266202f29222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xfff30e936bf6862c2996f1cc7b6ac49572b93616cbb292225a0183739ffa4ed0"
+    },
+    {
+      "name": "bidi-override",
+      "input": {
+        "title": "Title",
+        "description": "abc‮gpj.exe",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22616263e280ae67706a2e657865222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xe166539f7c6bc383d103e2a8cb43da49a09b1b12a6fd1a63545414c628a3bb97"
+    },
+    {
+      "name": "unicode-newline",
+      "input": {
+        "title": "Title",
+        "description": "ab",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a2261c28562222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x4b66f442d961f02e12e6a1088b03fe3423cd37f270357ecfa96355a2a5cb3cf1"
+    },
+    {
+      "name": "long",
+      "input": {
+        "title": "Title",
+        "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a2278787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x3d93c536dd83fc30982351dca3fd3a2ebc7356dc9465e6525db36f2f1a2ae3ed"
+    },
+    {
+      "name": "leading-newline",
+      "input": {
+        "title": "Title",
+        "description": "\nx",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a225c6e78222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x164baf19eb0fdf7c01550f77e24a5d3bdf31b844ba95b83b21c7296e2aaf703e"
+    },
+    {
+      "name": "trailing-newline",
+      "input": {
+        "title": "Title",
+        "description": "x\n",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22785c6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc7022e8e32edbef6aaefb360b293f4c398999c0187ad27206aaec21372c133a2"
+    },
+    {
+      "name": "multiple-lines",
+      "input": {
+        "title": "Title",
+        "description": "a\n\nb\n",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22615c6e5c6e625c6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xc160444cac5f3f41a0afab1d7490436a4d7bc4ab95dab11420d1b6112daa6e03"
+    },
+    {
+      "name": "mixed-endings",
+      "input": {
+        "title": "Title",
+        "description": "a\r\nb\nc\r",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a225469746c65222c226465736372697074696f6e223a22615c725c6e625c6e635c72222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x6d2ff25ed7654e2aecdb60a20f61c95209428f22d15e4d60134392b2b283e74c"
+    },
+    {
+      "name": "variation-selector",
+      "input": {
+        "title": "❤️",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22e29da4efb88f222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x204e2b4bdcbd6fba0f0eefa52369b589631258012aed8692c61f8ce02cb9d2cd"
+    },
+    {
+      "name": "zwj",
+      "input": {
+        "title": "👩‍💻",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22f09f91a9e2808df09f92bb222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x300b4ce7c9d08306fa459ca0f101f3bbf7dcfe9121ca0bf8044c39934fba821c"
+    },
+    {
+      "name": "zero-width-space",
+      "input": {
+        "title": "a​b",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a2261e2808b62222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xf616a2a49bf16a6f6e426dcfd2a289066ede21e831d60e8d5f38d347750091fc"
+    },
+    {
+      "name": "replacement-char",
+      "input": {
+        "title": "�",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22efbfbd222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0x14480ae616e8ce8e7d6430b0b9cbe924fd54516eb9bcb7b5790f463d16a72a86"
+    },
+    {
+      "name": "del",
+      "input": {
+        "title": "ab",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      },
+      "canonical_hex": "7b227469746c65223a22617f62222c226465736372697074696f6e223a224465736372697074696f6e222c226372697465726961223a224372697465726961222c22726577617264223a2231222c22746f6b656e223a2255534447222c22646561646c696e65223a22323032362d31302d31345430393a35343a33302e3030305a227d",
+      "keccak256": "0xebcf58f26168e46683eafac5b4fca78614ca6d1f5c4f351bcff277ea6313ed04"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "missing-field",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "extra-field",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z",
+        "extra": "x"
+      }
+    },
+    {
+      "name": "nested-criteria",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": {
+          "admin": true
+        },
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "array-criteria",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": [],
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "numeric-reward",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": 1,
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "null-title",
+      "input": {
+        "title": null,
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": "USDG",
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "boolean-token",
+      "input": {
+        "title": "Title",
+        "description": "Description",
+        "criteria": "Criteria",
+        "reward": "1",
+        "token": false,
+        "deadline": "2026-10-14T09:54:30.000Z"
+      }
+    },
+    {
+      "name": "root-array",
+      "input": []
+    },
+    {
+      "name": "root-null",
+      "input": null
+    }
+  ]
+}

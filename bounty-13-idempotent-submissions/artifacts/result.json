@@ -1,0 +1,12 @@
+{
+  "logical_submissions": 10,
+  "lost_responses": 44,
+  "no_duplicates": true,
+  "requests": 200,
+  "restarts": 17,
+  "review_immutable": true,
+  "seed": 13,
+  "stale_deterministic": true,
+  "trace_events": 245,
+  "wallets": 10
+}

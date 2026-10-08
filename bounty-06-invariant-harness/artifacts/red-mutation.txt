@@ -1,0 +1,41 @@
+Compiling 1 files with Solc 0.8.29
+Solc 0.8.29 finished in 88.83ms
+Compiler run successful!
+
+Ran 1 test for test/IMDWorksEscrow.invariant.t.sol:IMDWorksEscrowInvariantTest
+[FAIL: assertion failed: 325028528675187087900666 != 162514264337593543950333] invariant_balanceCoversIndependentLiabilities
+	[Sequence] (original: 3, shrunk: 3)
+		sender=0xdFA43A40A1B90237F62Ea1546F28ccbB8a2cEAfD addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=create(uint256,uint96,uint32) args=[37286148824645607708130848068125831305909711839035504462246412778 [3.728e64], 79228162514264337593543950333 [7.922e28], 11318227 [1.131e7]]
+		sender=0x76184270c7E733eB443794326eb9F6E323339Ec8 addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=submit(uint256,uint256,uint256,bool) args=[3921334127585822279525867114402156763082056909997786339566562369 [3.921e63], 69199142094384084142516592271543210111228868333031690729360 [6.919e58], 514, false]
+		sender=0x000000000000000000000000000000000000061f addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=award(uint256,uint256) args=[6414, 0]
+
+IMDWorksEscrowInvariantTest invariants: 1/2 invariants broken
+[FAIL: assertion failed: 325028528675187087900666 != 162514264337593543950333] invariant_balanceCoversIndependentLiabilities
+[PASS] invariant_terminalBountyCannotPayTwice
+ IMDWorksEscrowInvariantTest invariants (runs: 0, calls: 0, reverts: 0)
+Logs:
+  Bound result 162514264337593543950333
+  Bound result 3545826
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 4.76ms (3.17ms CPU time)
+
+Ran 1 test suite in 8.13ms (4.76ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/IMDWorksEscrow.invariant.t.sol:IMDWorksEscrowInvariantTest
+[FAIL: assertion failed: 325028528675187087900666 != 162514264337593543950333] invariant_balanceCoversIndependentLiabilities
+	[Sequence] (original: 3, shrunk: 3)
+		sender=0xdFA43A40A1B90237F62Ea1546F28ccbB8a2cEAfD addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=create(uint256,uint96,uint32) args=[37286148824645607708130848068125831305909711839035504462246412778 [3.728e64], 79228162514264337593543950333 [7.922e28], 11318227 [1.131e7]]
+		sender=0x76184270c7E733eB443794326eb9F6E323339Ec8 addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=submit(uint256,uint256,uint256,bool) args=[3921334127585822279525867114402156763082056909997786339566562369 [3.921e63], 69199142094384084142516592271543210111228868333031690729360 [6.919e58], 514, false]
+		sender=0x000000000000000000000000000000000000061f addr=[test/IMDWorksEscrow.invariant.t.sol:EscrowHandler]0xF62849F9A0B5Bf2913b396098F7c7019b51A820a calldata=award(uint256,uint256) args=[6414, 0]
+
+IMDWorksEscrowInvariantTest invariants: 1/2 invariants broken
+[FAIL: assertion failed: 325028528675187087900666 != 162514264337593543950333] invariant_balanceCoversIndependentLiabilities
+[PASS] invariant_terminalBountyCannotPayTwice
+ IMDWorksEscrowInvariantTest invariants (runs: 0, calls: 0, reverts: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+
+Fuzz seed: 0x494d44574f524b532d424f554e54592d3036 (use `--fuzz-seed` to reproduce)

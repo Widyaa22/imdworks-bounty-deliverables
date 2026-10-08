@@ -1,0 +1,16 @@
+{
+  "name": "imdworks-bounty-08-wallet-auth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1",
+    "verify": "node verify.js"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  },
+  "engines": {
+    "node": ">=22.0.0 <23"
+  }
+}
