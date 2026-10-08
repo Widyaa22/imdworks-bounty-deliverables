@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 7,
+  "web_bounty_id": "13608b4b-68c5-463e-9aed-ed734c0ef51f",
+  "onchain_bounty_id": "2",
+  "title": "Implement a reorg-safe bounty event indexer",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Reorg-safe bounty event indexer",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-07-reorg-indexer",
+  "reproduction": "cd bounty-07-reorg-indexer && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.423Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 9,
+  "web_bounty_id": "ffd0cae1-21e9-4378-bc3d-8c814377be97",
+  "onchain_bounty_id": "4",
+  "title": "Prove exact USDG decimal parsing with generated cases",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Exact USDG decimal parser",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/usdg-parser",
+  "reproduction": "cd usdg-parser && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.426Z"
+}

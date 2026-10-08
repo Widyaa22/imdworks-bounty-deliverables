@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 11,
+  "web_bounty_id": "aebb7dd8-20a6-48bc-a813-524eac05cc49",
+  "onchain_bounty_id": "6",
+  "title": "Model issuer restrictions without losing escrow credits",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "ERC-20 issuer restriction behavior matrix",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-11-token-modes",
+  "reproduction": "cd bounty-11-token-modes && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.427Z"
+}

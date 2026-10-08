@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 14,
+  "web_bounty_id": "863d4bb0-630a-42b3-9ce3-fdf329ddc339",
+  "onchain_bounty_id": "9",
+  "title": "Produce a reproducible escrow bytecode provenance report",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Escrow bytecode provenance verifier",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-14-provenance",
+  "reproduction": "cd bounty-14-provenance && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.427Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 8,
+  "web_bounty_id": "80c238e8-dd8c-4d0a-8f60-711142f1a496",
+  "onchain_bounty_id": "3",
+  "title": "Construct an adversarial wallet sign-in regression suite",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Adversarial wallet sign-in regression suite",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-08-wallet-auth",
+  "reproduction": "cd bounty-08-wallet-auth && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.424Z"
+}

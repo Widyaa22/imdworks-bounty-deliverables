@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 10,
+  "web_bounty_id": "bc53559e-b4cc-4288-b9fe-dac309053a98",
+  "onchain_bounty_id": "5",
+  "title": "Design canonical brief hashing across two languages",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Canonical brief hashing across Python and JavaScript",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-10-brief-hashing",
+  "reproduction": "cd bounty-10-brief-hashing && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.427Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 13,
+  "web_bounty_id": "633062af-7ef8-433d-af44-74f34a3e72fc",
+  "onchain_bounty_id": "8",
+  "title": "Make bounty submissions idempotent under concurrency",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Idempotent concurrent submission API harness",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-13-idempotent-submissions",
+  "reproduction": "cd bounty-13-idempotent-submissions && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.427Z"
+}

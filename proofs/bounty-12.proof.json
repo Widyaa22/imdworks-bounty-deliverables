@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 12,
+  "web_bounty_id": "24146710-62fd-4705-8c2a-f8eb8fe3f79c",
+  "onchain_bounty_id": "7",
+  "title": "Build an agent prompt-injection boundary benchmark",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Offline prompt-injection boundary benchmark",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-12-prompt-boundary",
+  "reproduction": "cd bounty-12-prompt-boundary && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.427Z"
+}

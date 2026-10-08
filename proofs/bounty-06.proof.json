@@ -1,0 +1,14 @@
+{
+  "schema": "imdworks-proof-v1",
+  "bounty_number": 6,
+  "web_bounty_id": "bb5bb8eb-14e4-4f07-b86e-565ab2c37972",
+  "onchain_bounty_id": "1",
+  "title": "Build a stateful escrow accounting invariant harness",
+  "author": "0x3ef568BF1f887BAE9885409B22cE9eBFe36CD346",
+  "summary": "Stateful escrow accounting invariant harness",
+  "repository": "https://github.com/Widyaa22/imdworks-bounty-deliverables",
+  "commit": "6b60e4b340d9241714edaefe17990d1cbea88f80",
+  "artifact_url": "https://github.com/Widyaa22/imdworks-bounty-deliverables/tree/6b60e4b340d9241714edaefe17990d1cbea88f80/bounty-06-invariant-harness",
+  "reproduction": "cd bounty-06-invariant-harness && see README.md for the one-command verifier",
+  "submitted_at_utc": "2026-10-08T08:44:55.421Z"
+}
